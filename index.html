@@ -7531,17 +7531,14 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=fdd46bb9">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fdd46bb9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Daniel Holtschneider,Joseph Barrera, Josh Alverson, Hanson Smith</p>
 </div>
 </div>
 </div>
@@ -7563,7 +7560,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Provide a brief overview of your project here (1 paragraph)</p>
+<p>We love horror, so we decided to explore Elliott O’Donnell’s books. We know a little bit more about him because of project one, but we want to learn more about his legacy. We think his writing may have more negative connotations compared to other horror novels before his time. He often uses his personal ghost-hunting experiences, which might make his stories feel less active by inciting the use of negative and possibly aggressive tones.</p>
 </div>
 </div>
 </div>
@@ -7585,7 +7582,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Explain your expected findings. What do you think the map of your data will look like and why? (2-3 sentences)</p>
+<p>We also wonder if he was as influential to modern horror as other authors from his era. O’Donnell might not be as famous today, but his works were popular back then and could have influenced many writers. We also believe that O’Donnell’s writings might be scarier and have more negative emotions and connotations than other popular horror writers before him due to the idea that he may have had inspiration from those authors.</p>
 </div>
 </div>
 </div>
@@ -7607,17 +7604,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=93477763-f8c3-4411-a37b-3e325577ee12">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Describe the body of texts you wanted to get and why. You should explain the total number of texts you ended up with and the various parameters you used to filter out data. Describe why you filtered out that particular data. (1 paragraph)</p>
+<p>We have two corpora. One containing the works of Elliot O'Donnell's 11 works. The other consists of Horror stories about, ghosts, spirits, or paranormal before Elliots O'Donnell's time dating as far back as 1812 with Charles Dickens, this corpus contained around 200 works. We limited the horror story data to those who covered similar subjects, to eliminate some independence, as well as limiting to those who were born before him, leaving us with those who wrote about horror who are older than O’Donnell. Keeping these corpora separate allows us to visualize their sentiment data more easily.</p>
 </div>
 </div>
 </div>
@@ -7629,7 +7616,31 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Place the query you used to get the dataframe here</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#elliot O'Donnell corpus</span>
+<span class="n">df_odonnell</span><span class="o">=</span> <span class="n">pg_catalog_clean</span><span class="p">[</span> 
+  <span class="p">(</span><span class="n">pg_catalog_clean</span><span class="o">.</span><span class="n">last_name</span> <span class="o">==</span> <span class="s1">'O</span><span class="se">\'</span><span class="s1">Donnell'</span><span class="p">)</span> <span class="o">&amp;</span> 
+  <span class="p">(</span><span class="n">pg_catalog_clean</span><span class="o">.</span><span class="n">first_name</span> <span class="o">==</span> <span class="s1">'Elliott'</span><span class="p">)</span>
+  <span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> 
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=eac34c4b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#other horror authors</span>
+<span class="n">df_bfe_odonnell</span> <span class="o">=</span> <span class="n">pg_catalog_clean</span><span class="p">[</span> 
+  <span class="p">((</span><span class="n">pg_catalog_clean</span><span class="o">.</span><span class="n">subjects</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">'Paranormal fiction'</span><span class="p">))</span> <span class="o">|</span> 
+  <span class="p">(</span><span class="n">pg_catalog_clean</span><span class="o">.</span><span class="n">subjects</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">'Ghost stories'</span><span class="p">))</span><span class="o">|</span> 
+  <span class="p">(</span><span class="n">pg_catalog_clean</span><span class="o">.</span><span class="n">subjects</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">'Spirits'</span> <span class="p">)))</span> <span class="o">&amp;</span> 
+  <span class="p">(</span><span class="n">pg_catalog_clean</span><span class="o">.</span><span class="n">birth</span> <span class="o">&lt;</span> <span class="mi">1871</span><span class="p">)</span>  
+<span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span> 
 </pre></div>
 </div>
 </div>
@@ -7640,13 +7651,13 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Import the results and show a sample</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="n">YOUR_DATAFRAME_TEXTS</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="s1">'YOUR_DATAFRAME_TEXTS.pickle'</span><span class="p">)</span>
-<span class="n">YOUR_DATAFRAME_TEXTS</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">df_bfe_odonnell_TEXTS</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="s1">'df_bfe_odonnell_TEXTS.pickle'</span><span class="p">)</span>
+<span class="n">df_bfe_odonnell_TEXTS</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7657,7 +7668,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7695,89 +7706,238 @@ a.anchor-link {
 </thead>
 <tbody>
 <tr>
-<th>477</th>
-<td>496</td>
+<th>14124</th>
+<td>14195</td>
 <td>Text</td>
-<td>2006-01-16</td>
-<td>The Little Lame Prince</td>
+<td>2004-11-28</td>
+<td>The Haunted and the Haunters; Or, The House an...</td>
 <td>en</td>
-<td>Children's literature; Fairy tales; Princes --...</td>
-<td>PZ</td>
-<td>Children's Literature; Browsing: Children &amp; Yo...</td>
-<td>&lt;NA&gt;</td>
-<td>Craik</td>
-<td>Dinah Maria Mulock</td>
-<td>1826</td>
-<td>1887</td>
-<td>THE LITTLE LAME PRINCE ***\r\n\r\n\r\n\r\n\r\n...</td>
-</tr>
-<tr>
-<th>60350</th>
-<td>60427</td>
-<td>Text</td>
-<td>2019-10-05</td>
-<td>Introducing Irony: A Book of Poetic Short Stor...</td>
-<td>en</td>
-<td>American poetry -- 20th century; Short stories...</td>
-<td>PS</td>
-<td>Browsing: Literature; Browsing: Poetry; Browsi...</td>
-<td>&lt;NA&gt;</td>
-<td>Bodenheim</td>
-<td>Maxwell</td>
-<td>1893</td>
-<td>1954</td>
-<td>INTRODUCING IRONY: A BOOK OF POETIC SHORT STOR...</td>
-</tr>
-<tr>
-<th>68907</th>
-<td>69000</td>
-<td>Text</td>
-<td>2022-09-16</td>
-<td>The private life of Henry Maitland: A record d...</td>
-<td>en</td>
-<td>Gissing, George, 1857-1903</td>
+<td>Horror tales; Ghost stories; Ghosts -- Fiction...</td>
 <td>PR</td>
-<td>Browsing: Biographies; Browsing: Literature</td>
+<td>Browsing: Literature; Browsing: Fiction</td>
 <td>&lt;NA&gt;</td>
-<td>Roberts</td>
-<td>Morley</td>
-<td>1857</td>
-<td>1942</td>
-<td>THE PRIVATE LIFE OF HENRY MAITLAND: A RECORD D...</td>
-</tr>
-<tr>
-<th>4898</th>
-<td>4939</td>
-<td>Text</td>
-<td>2004-01-01</td>
-<td>Chopin : the Man and His Music</td>
-<td>en</td>
-<td>Chopin, Frédéric, 1810-1849; Composers -- Biog...</td>
-<td>ML</td>
-<td>Browsing: Biographies; Browsing: Music</td>
-<td>&lt;NA&gt;</td>
-<td>Huneker</td>
-<td>James</td>
-<td>1857</td>
-<td>1921</td>
+<td>Lytton</td>
+<td>Edward Bulwer Lytton</td>
+<td>1803</td>
+<td>1873</td>
 <td>***</td>
 </tr>
 <tr>
-<th>29725</th>
-<td>29797</td>
+<th>72255</th>
+<td>72421</td>
 <td>Text</td>
-<td>2009-08-25</td>
-<td>The Prison Chaplaincy, And Its Experiences</td>
+<td>2023-12-15</td>
+<td>The room in the tower, and other stories</td>
 <td>en</td>
-<td>Prisons -- New Hampshire; Prisoners -- Religio...</td>
-<td>HV</td>
-<td>Browsing: History - American; Browsing: Religi...</td>
+<td>Horror tales, English; Short stories, English;...</td>
+<td>PR</td>
+<td>Browsing: Literature; Browsing: Fiction</td>
 <td>&lt;NA&gt;</td>
-<td>Quinby</td>
-<td>Hosea</td>
-<td>1804</td>
-<td>1878</td>
-<td>THE PRISON CHAPLAINCY, AND ITS EXPERIENCES ***...</td>
+<td>Benson</td>
+<td>E. F. (Edward Frederic)</td>
+<td>1867</td>
+<td>1940</td>
+<td>THE ROOM IN THE TOWER, AND OTHER STORIES ***\r...</td>
+</tr>
+<tr>
+<th>53107</th>
+<td>53181</td>
+<td>Text</td>
+<td>2016-10-01</td>
+<td>Eräitä kertoelmia</td>
+<td>fi</td>
+<td>Science fiction; Ghost stories; English fictio...</td>
+<td>PR</td>
+<td>Browsing: Literature; Browsing: Science-Fictio...</td>
+<td>&lt;NA&gt;</td>
+<td>Wells</td>
+<td>H. G. (Herbert George)</td>
+<td>1866</td>
+<td>1946</td>
+<td>ERÄITÄ KERTOELMIA ***\r\n\r\n\r\n\r\n\r\nProdu...</td>
+</tr>
+<tr>
+<th>173</th>
+<td>174</td>
+<td>Text</td>
+<td>1994-10-01</td>
+<td>The Picture of Dorian Gray</td>
+<td>en</td>
+<td>Didactic fiction; Supernatural -- Fiction; Con...</td>
+<td>PR</td>
+<td>Gothic Fiction; Movie Books; Browsing: Literat...</td>
+<td>&lt;NA&gt;</td>
+<td>Wilde</td>
+<td>Oscar</td>
+<td>1854</td>
+<td>1900</td>
+<td>THE PICTURE OF DORIAN GRAY ***\r\n\r\n\r\n\r\n...</td>
+</tr>
+<tr>
+<th>47444</th>
+<td>47518</td>
+<td>Text</td>
+<td>2014-12-03</td>
+<td>Shakespeare's Comedy of The Tempest</td>
+<td>en</td>
+<td>Shipwreck victims -- Drama; Fathers and daught...</td>
+<td>PR</td>
+<td>Browsing: Literature; Browsing: Performing Art...</td>
+<td>Dulac, Edmund, 1882-1953 [Illustrator]</td>
+<td>Shakespeare</td>
+<td>William</td>
+<td>1564</td>
+<td>1616</td>
+<td>SHAKESPEARE'S COMEDY OF THE TEMPEST ***\r\n\r\...</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=34360690">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_odonnell_TEXTS</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="s1">'df_odonnell_TEXTS.pickle'</span><span class="p">)</span>
+<span class="n">df_odonnell_TEXTS</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>text_id</th>
+<th>type</th>
+<th>issued</th>
+<th>title</th>
+<th>language</th>
+<th>subjects</th>
+<th>locc</th>
+<th>bookshelves</th>
+<th>second_author</th>
+<th>last_name</th>
+<th>first_name</th>
+<th>birth</th>
+<th>death</th>
+<th>text_data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>18162</th>
+<td>18233</td>
+<td>Text</td>
+<td>2006-04-23</td>
+<td>Animal Ghosts; Or, Animal Hauntings and the He...</td>
+<td>en</td>
+<td>Animal ghosts; Extrasensory perception in animals</td>
+<td>BF</td>
+<td>Horror; Browsing: Psychiatry/Psychology; Brows...</td>
+<td>&lt;NA&gt;</td>
+<td>O'Donnell</td>
+<td>Elliott</td>
+<td>1872</td>
+<td>1965</td>
+<td>ANIMAL GHOSTS; OR, ANIMAL HAUNTINGS AND THE HE...</td>
+</tr>
+<tr>
+<th>50701</th>
+<td>50775</td>
+<td>Text</td>
+<td>2015-12-27</td>
+<td>Twenty Years' Experience as a Ghost Hunter</td>
+<td>en</td>
+<td>Ghosts</td>
+<td>BF</td>
+<td>Browsing: Philosophy &amp; Ethics; Browsing: Psych...</td>
+<td>Bevan-Petman, H. C. [Illustrator]; Campbell, P...</td>
+<td>O'Donnell</td>
+<td>Elliott</td>
+<td>1872</td>
+<td>1965</td>
+<td>TWENTY YEARS' EXPERIENCE AS A GHOST HUNTER ***...</td>
+</tr>
+<tr>
+<th>34190</th>
+<td>34263</td>
+<td>Text</td>
+<td>2010-11-09</td>
+<td>The Banshee</td>
+<td>en</td>
+<td>Ghosts; Spirits</td>
+<td>GR</td>
+<td>Browsing: Culture/Civilization/Society; Browsi...</td>
+<td>&lt;NA&gt;</td>
+<td>O'Donnell</td>
+<td>Elliott</td>
+<td>1872</td>
+<td>1965</td>
+<td>THE BANSHEE ***\r\n\r\n\r\nE-text prepared by ...</td>
+</tr>
+<tr>
+<th>14246</th>
+<td>14317</td>
+<td>Text</td>
+<td>2004-12-10</td>
+<td>The Sorcery Club</td>
+<td>en</td>
+<td>Paranormal fiction</td>
+<td>PR</td>
+<td>Horror; Browsing: Literature; Browsing: Religi...</td>
+<td>&lt;NA&gt;</td>
+<td>O'Donnell</td>
+<td>Elliott</td>
+<td>1872</td>
+<td>1965</td>
+<td>THE SORCERY CLUB ***\r\n\r\n\r\nE-text prepare...</td>
+</tr>
+<tr>
+<th>19963</th>
+<td>20034</td>
+<td>Text</td>
+<td>2006-12-07</td>
+<td>Scottish Ghost Stories</td>
+<td>en</td>
+<td>Folklore -- Scotland; Ghost stories, Scottish</td>
+<td>BF</td>
+<td>Horror; Browsing: Culture/Civilization/Society...</td>
+<td>&lt;NA&gt;</td>
+<td>O'Donnell</td>
+<td>Elliott</td>
+<td>1872</td>
+<td>1965</td>
+<td>***</td>
 </tr>
 </tbody>
 </table>
@@ -7813,11 +7973,12 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Import the results and show a sample</span>
-<span class="n">YOUR_DATAFRAME_PLACES</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="s1">'YOUR_DATAFRAME_PLACES.pickle'</span><span class="p">)</span>
+<span class="n">df_odonnell_PLACES</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="s1">'df_odonnell_PLACES.pickle'</span><span class="p">)</span>
+<span class="n">df_bfe_odonnell_PLACES</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="s1">'df_bfe_odonnell_PLACES.pickle'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7828,10 +7989,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">YOUR_DATAFRAME_PLACES</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_odonnell_PLACES</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7842,7 +8003,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7881,94 +8042,248 @@ a.anchor-link {
 </thead>
 <tbody>
 <tr>
-<th>827</th>
-<td>On the wall  at the northeast corner is a tabl...</td>
-<td>43477</td>
-<td>Bell's Cathedrals: The Cathedral Church of Lin...</td>
-<td>Lincoln Cathedral</td>
-<td>Kendrick</td>
-<td>A. F. (Albert Frank)</td>
+<th>174</th>
+<td>"Yes," the Vicar's wife said.</td>
+<td>14317</td>
+<td>The Sorcery Club</td>
+<td>Paranormal fiction</td>
+<td>O'Donnell</td>
+<td>Elliott</td>
 <td>1872</td>
-<td>1954</td>
-<td>On the wall\r\nat the north-east corner is a t...</td>
-<td>[North Lincolnshire]</td>
+<td>1965</td>
+<td>"Yes," the Vicar's wife said.</td>
+<td>[Vicar]</td>
+<td>3</td>
+<td>[]</td>
+<td>[]</td>
+<td>[]</td>
+<td>[]</td>
+</tr>
+<tr>
+<th>634</th>
+<td>Hamar!"</td>
+<td>14317</td>
+<td>The Sorcery Club</td>
+<td>Paranormal fiction</td>
+<td>O'Donnell</td>
+<td>Elliott</td>
+<td>1872</td>
+<td>1965</td>
+<td>Hamar!"</td>
+<td>[Hamar, Hamar, Hamar]</td>
+<td>355</td>
+<td>[]</td>
+<td>[]</td>
+<td>[]</td>
+<td>[]</td>
+</tr>
+<tr>
+<th>260</th>
+<td>Again there was an embarrassed silence, which ...</td>
+<td>34263</td>
+<td>The Banshee</td>
+<td>Ghosts; Spirits</td>
+<td>O'Donnell</td>
+<td>Elliott</td>
+<td>1872</td>
+<td>1965</td>
+<td>Again there was an embarrassed silence, which ...</td>
+<td>[Ronan]</td>
+<td>62</td>
+<td>[]</td>
+<td>[]</td>
+<td>[]</td>
+<td>[]</td>
+</tr>
+<tr>
+<th>1662</th>
+<td>‘Do you  know him, too?’    “‘I am his old fri...</td>
+<td>50775</td>
+<td>Twenty Years' Experience as a Ghost Hunter</td>
+<td>Ghosts</td>
+<td>O'Donnell</td>
+<td>Elliott</td>
+<td>1872</td>
+<td>1965</td>
+<td>‘Do you\r\nknow him, too?’\r\n\r\n“‘I am his o...</td>
+<td>[Llanginney]</td>
+<td>6</td>
+<td>[None]</td>
+<td>[None]</td>
+<td>[None]</td>
+<td>[None]</td>
+</tr>
+<tr>
+<th>132</th>
+<td>"She is to be  coerced into marrying Hamar."</td>
+<td>14317</td>
+<td>The Sorcery Club</td>
+<td>Paranormal fiction</td>
+<td>O'Donnell</td>
+<td>Elliott</td>
+<td>1872</td>
+<td>1965</td>
+<td>"She is to be\r\ncoerced into marrying Hamar."</td>
+<td>[Hamar]</td>
+<td>355</td>
+<td>[]</td>
+<td>[]</td>
+<td>[]</td>
+<td>[]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2cdc4d46">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_bfe_odonnell_PLACES</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>cleaned_sentences</th>
+<th>text_id</th>
+<th>title</th>
+<th>subjects</th>
+<th>last_name</th>
+<th>first_name</th>
+<th>birth</th>
+<th>death</th>
+<th>sentences</th>
+<th>toponyms</th>
+<th>nltk_toponym_count</th>
+<th>place</th>
+<th>latitude</th>
+<th>longitude</th>
+<th>feature_name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>1192</th>
+<td>Whom do you suspect it isI  mean, of course, w...</td>
+<td>72421</td>
+<td>The room in the tower, and other stories</td>
+<td>Horror tales, English; Short stories, English;...</td>
+<td>Benson</td>
+<td>E. F. (Edward Frederic)</td>
+<td>1867</td>
+<td>1940</td>
+<td>Whom do you suspect it is--I\r\nmean, of cours...</td>
+<td>[Machmout]</td>
+<td>11</td>
+<td>[]</td>
+<td>[]</td>
+<td>[]</td>
+<td>[]</td>
+</tr>
+<tr>
+<th>1265</th>
+<td>said Herminia, growing pale.</td>
+<td>68789</td>
+<td>The dead tryst</td>
+<td>Ghost stories; Man-woman relationships -- Fict...</td>
+<td>Grant</td>
+<td>James</td>
+<td>1822</td>
+<td>1887</td>
+<td>said Herminia, growing pale.</td>
+<td>[Herminia]</td>
+<td>96</td>
+<td>[]</td>
+<td>[]</td>
+<td>[]</td>
+<td>[]</td>
+</tr>
+<tr>
+<th>890</th>
+<td>She lives with her mother, a faded  tired woma...</td>
+<td>174</td>
+<td>The Picture of Dorian Gray</td>
+<td>Didactic fiction; Supernatural -- Fiction; Con...</td>
+<td>Wilde</td>
+<td>Oscar</td>
+<td>1854</td>
+<td>1900</td>
+<td>She lives with her mother, a faded\r\ntired wo...</td>
+<td>[magenta]</td>
 <td>1</td>
-<td>[North Lincolnshire]</td>
-<td>[53.58333]</td>
-<td>[-0.5]</td>
+<td>[]</td>
+<td>[]</td>
+<td>[]</td>
+<td>[]</td>
+</tr>
+<tr>
+<th>49</th>
+<td>"Toimimaan  se on tehtykin."</td>
+<td>53181</td>
+<td>Eräitä kertoelmia</td>
+<td>Science fiction; Ghost stories; English fictio...</td>
+<td>Wells</td>
+<td>H. G. (Herbert George)</td>
+<td>1866</td>
+<td>1946</td>
+<td>"Toimimaan\r\nse on tehtykin."</td>
+<td>[Toimimaan]</td>
+<td>1</td>
+<td>[None]</td>
+<td>[None]</td>
+<td>[None]</td>
+<td>[None]</td>
+</tr>
+<tr>
+<th>1083</th>
+<td>There is no doubt that Calhoun County has a my...</td>
+<td>17893</td>
+<td>The Best Ghost Stories</td>
+<td>Ghost stories</td>
+<td>French</td>
+<td>Joseph Lewis</td>
+<td>1858</td>
+<td>1936</td>
+<td>There is no doubt that Calhoun County has a my...</td>
+<td>[Calhoun County]</td>
+<td>1</td>
+<td>[Calhoun County]</td>
+<td>[28.43911]</td>
+<td>[-96.61507]</td>
 <td>[second-order administrative division]</td>
-</tr>
-<tr>
-<th>1015</th>
-<td>The Wisconsin man left prison sick, and must h...</td>
-<td>29797</td>
-<td>The Prison Chaplaincy, And Its Experiences</td>
-<td>Prisons -- New Hampshire; Prisoners -- Religio...</td>
-<td>Quinby</td>
-<td>Hosea</td>
-<td>1804</td>
-<td>1878</td>
-<td>The Wisconsin man left prison sick, and must h...</td>
-<td>[Wisconsin]</td>
-<td>2</td>
-<td>[Wisconsin]</td>
-<td>[44.50024]</td>
-<td>[-90.00041]</td>
-<td>[first-order administrative division]</td>
-</tr>
-<tr>
-<th>329</th>
-<td>For as the flower  Of the tigerlily bright wit...</td>
-<td>38011</td>
-<td>The Epic of Hades, in Three Books</td>
-<td>Gods, Greek -- Poetry; Mythology, Greek -- Poetry</td>
-<td>Morris</td>
-<td>Lewis</td>
-<td>1833</td>
-<td>1907</td>
-<td>For as the flower\r\nOf the tiger-lily bright ...</td>
-<td>[Learning]</td>
-<td>1</td>
-<td>[]</td>
-<td>[]</td>
-<td>[]</td>
-<td>[]</td>
-</tr>
-<tr>
-<th>608</th>
-<td>It  passed the House with no opposition, and s...</td>
-<td>29797</td>
-<td>The Prison Chaplaincy, And Its Experiences</td>
-<td>Prisons -- New Hampshire; Prisoners -- Religio...</td>
-<td>Quinby</td>
-<td>Hosea</td>
-<td>1804</td>
-<td>1878</td>
-<td>It\r\npassed the House with no opposition, and...</td>
-<td>[Concord]</td>
-<td>16</td>
-<td>[Concord]</td>
-<td>[43.20814]</td>
-<td>[-71.53757]</td>
-<td>[seat of a first-order administrative division]</td>
-</tr>
-<tr>
-<th>285</th>
-<td>Directors.    H. Edgeworth Bicknell, Esq.</td>
-<td>42783</td>
-<td>Notes and Queries, Number 168, January 15, 185...</td>
-<td>Questions and answers -- Periodicals</td>
-<td>Various</td>
-<td>&lt;NA&gt;</td>
-<td>&lt;NA&gt;</td>
-<td>&lt;NA&gt;</td>
-<td>_Directors._\r\n  H. Edgeworth Bicknell, Esq.</td>
-<td>[Esq]</td>
-<td>22</td>
-<td>[]</td>
-<td>[]</td>
-<td>[]</td>
-<td>[]</td>
 </tr>
 </tbody>
 </table>
@@ -7999,18 +8314,253 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6a8c78ee-36fb-4532-8e2f-6dd1e2e54a4c">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=6a8c78ee-36fb-4532-8e2f-6dd1e2e54a4c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Import the results and show a sample</span>
-<span class="n">YOUR_DATAFRAME_SENTIMENTS</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="s1">'YOUR_DATAFRAME_SENTIMENTS.pickle'</span><span class="p">)</span>
-<span class="n">YOUR_DATAFRAME_SENTIMENTS</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">df_bfe_odonnell_SENTIMENTS</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="s1">'df_bfe_odonnell_SENTIMENTS.pickle'</span><span class="p">)</span>
+<span class="n">df_bfe_odonnell_SENTIMENTS</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>place</th>
+<th>location_count</th>
+<th>latitude</th>
+<th>longitude</th>
+<th>location</th>
+<th>avg_roberta_pos</th>
+<th>avg_roberta_neu</th>
+<th>avg_roberta_neg</th>
+<th>avg_roberta_compound</th>
+<th>location_count_bucket</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>141</th>
+<td>Lorraine</td>
+<td>5</td>
+<td>45.68338</td>
+<td>-73.78249</td>
+<td>populated place</td>
+<td>0.211239</td>
+<td>0.504995</td>
+<td>0.283766</td>
+<td>-0.087465</td>
+<td>1</td>
+</tr>
+<tr>
+<th>75</th>
+<td>Federal Republic of Germany</td>
+<td>20</td>
+<td>51.5</td>
+<td>10.5</td>
+<td>independent political entity</td>
+<td>0.280724</td>
+<td>0.522553</td>
+<td>0.196722</td>
+<td>0.078028</td>
+<td>3</td>
+</tr>
+<tr>
+<th>65</th>
+<td>Dover</td>
+<td>6</td>
+<td>39.15817</td>
+<td>-75.52437</td>
+<td>seat of a first-order administrative division</td>
+<td>0.083872</td>
+<td>0.833169</td>
+<td>0.082958</td>
+<td>0.001761</td>
+<td>1</td>
+</tr>
+<tr>
+<th>226</th>
+<td>Strasbourg</td>
+<td>6</td>
+<td>48.58392</td>
+<td>7.74553</td>
+<td>seat of a first-order administrative division</td>
+<td>0.086983</td>
+<td>0.628645</td>
+<td>0.284372</td>
+<td>-0.140238</td>
+<td>1</td>
+</tr>
+<tr>
+<th>161</th>
+<td>Milan</td>
+<td>14</td>
+<td>45.46427</td>
+<td>9.18951</td>
+<td>seat of a first-order administrative division</td>
+<td>0.083109</td>
+<td>0.659758</td>
+<td>0.257133</td>
+<td>-0.086572</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c11cd19a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_odonnell_SENTIMENTS</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="s1">'df_odonnell_SENTIMENTS.pickle'</span><span class="p">)</span>
+<span class="n">df_odonnell_SENTIMENTS</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>place</th>
+<th>location_count</th>
+<th>latitude</th>
+<th>longitude</th>
+<th>location</th>
+<th>avg_roberta_pos</th>
+<th>avg_roberta_neu</th>
+<th>avg_roberta_neg</th>
+<th>avg_roberta_compound</th>
+<th>location_count_bucket</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>275</th>
+<td>Republic of Angola</td>
+<td>1</td>
+<td>-12.5</td>
+<td>18.5</td>
+<td>independent political entity</td>
+<td>0.872092</td>
+<td>0.109523</td>
+<td>0.018385</td>
+<td>0.760207</td>
+<td>1</td>
+</tr>
+<tr>
+<th>195</th>
+<td>Loing</td>
+<td>1</td>
+<td>9.022</td>
+<td>32.44437</td>
+<td>populated place</td>
+<td>0.046091</td>
+<td>0.648622</td>
+<td>0.305287</td>
+<td>-0.091076</td>
+<td>1</td>
+</tr>
+<tr>
+<th>346</th>
+<td>United States Virgin Islands</td>
+<td>4</td>
+<td>18.34829</td>
+<td>-64.98348</td>
+<td>dependent political entity</td>
+<td>0.109776</td>
+<td>0.536721</td>
+<td>0.353503</td>
+<td>-0.244471</td>
+<td>1</td>
+</tr>
+<tr>
+<th>50</th>
+<td>Cairo</td>
+<td>2</td>
+<td>30.06263</td>
+<td>31.24967</td>
+<td>capital of a political entity</td>
+<td>0.092942</td>
+<td>0.660456</td>
+<td>0.246602</td>
+<td>-0.107256</td>
+<td>1</td>
+</tr>
+<tr>
+<th>158</th>
+<td>Japan</td>
+<td>4</td>
+<td>35.68536</td>
+<td>139.75309</td>
+<td>independent political entity</td>
+<td>0.222027</td>
+<td>0.630125</td>
+<td>0.147848</td>
+<td>0.038989</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -8045,18 +8595,95 @@ Does your map try to tell a particular story? If so, what is that story?</li>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4f557135-96ed-4f9c-9ec9-42108f8c63eb">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4f557135-96ed-4f9c-9ec9-42108f8c63eb">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
 <span class="c1">#YOUR MAP CODE HERE</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter_mapbox</span><span class="p">(</span>
+    <span class="n">df_bfe_odonnell_SENTIMENTS</span><span class="p">,</span>  <span class="c1">#put your dataframe here</span>
+    <span class="n">lat</span><span class="o">=</span><span class="s2">"latitude"</span><span class="p">,</span>               <span class="c1"># Latitude column</span>
+    <span class="n">lon</span><span class="o">=</span><span class="s2">"longitude"</span><span class="p">,</span>              <span class="c1"># Longitude column</span>
+    <span class="n">size</span><span class="o">=</span><span class="s2">"location_count_bucket"</span><span class="p">,</span>        <span class="c1"># Bubble size based on location count</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">"avg_roberta_compound"</span><span class="p">,</span>      <span class="c1"># Color based on sentiment score</span>
+    <span class="n">color_continuous_scale</span><span class="o">=</span><span class="n">px</span><span class="o">.</span><span class="n">colors</span><span class="o">.</span><span class="n">cyclical</span><span class="o">.</span><span class="n">IceFire</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span>  <span class="c1"># Use Twilight scale (blue to red)</span>
+    <span class="n">size_max</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>                  <span class="c1"># Maximum size of the bubbles</span>
+    <span class="n">center</span><span class="o">=</span><span class="p">{</span><span class="s2">"lat"</span><span class="p">:</span> <span class="mi">54</span><span class="p">,</span> <span class="s2">"lon"</span><span class="p">:</span> <span class="mi">0</span><span class="p">},</span>
+    <span class="n">zoom</span><span class="o">=</span><span class="mf">4.5</span>                       <span class="c1"># Adjust zoom level for better visibility</span>
+<span class="p">)</span>
+
+<span class="c1"># Update the layout to use the default map style (which doesn't need a token)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">mapbox_style</span><span class="o">=</span><span class="s2">"open-street-map"</span><span class="p">,</span>  <span class="c1"># No token needed for this style</span>
+    <span class="n">margin</span><span class="o">=</span><span class="p">{</span><span class="s2">"r"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">"t"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">"l"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">"b"</span><span class="p">:</span><span class="mi">0</span><span class="p">}</span>  <span class="c1"># Remove margins for a cleaner view</span>
+<span class="p">)</span>
+
+
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ee25381a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+<span class="c1">#YOUR MAP CODE HERE</span>
+<span class="n">df_odonnell_SENTIMENTS</span> <span class="o">=</span><span class="n">df_odonnell_SENTIMENTS</span><span class="p">[</span><span class="n">df_odonnell_SENTIMENTS</span><span class="o">.</span><span class="n">location_count</span><span class="o">&gt;</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter_mapbox</span><span class="p">(</span>
+    <span class="n">df_odonnell_SENTIMENTS</span><span class="p">,</span>  <span class="c1">#put your dataframe here</span>
+    <span class="n">lat</span><span class="o">=</span><span class="s2">"latitude"</span><span class="p">,</span>               <span class="c1"># Latitude column</span>
+    <span class="n">lon</span><span class="o">=</span><span class="s2">"longitude"</span><span class="p">,</span>              <span class="c1"># Longitude column</span>
+    <span class="n">size</span><span class="o">=</span><span class="s2">"location_count_bucket"</span><span class="p">,</span>        <span class="c1"># Bubble size based on location count</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">"avg_roberta_compound"</span><span class="p">,</span>      <span class="c1"># Color based on sentiment score</span>
+    <span class="n">color_continuous_scale</span><span class="o">=</span><span class="n">px</span><span class="o">.</span><span class="n">colors</span><span class="o">.</span><span class="n">cyclical</span><span class="o">.</span><span class="n">IceFire</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span>  <span class="c1"># Use Twilight scale (blue to red)</span>
+    <span class="n">size_max</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>                  <span class="c1"># Maximum size of the bubbles</span>
+    <span class="n">center</span><span class="o">=</span><span class="p">{</span><span class="s2">"lat"</span><span class="p">:</span> <span class="mi">54</span><span class="p">,</span> <span class="s2">"lon"</span><span class="p">:</span> <span class="mi">0</span><span class="p">},</span>
+    <span class="n">zoom</span><span class="o">=</span><span class="mf">4.5</span>                       <span class="c1"># Adjust zoom level for better visibility</span>
+<span class="p">)</span>
+
+<span class="c1"># Update the layout to use the default map style (which doesn't need a token)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">mapbox_style</span><span class="o">=</span><span class="s2">"open-street-map"</span><span class="p">,</span>  <span class="c1"># No token needed for this style</span>
+    <span class="n">margin</span><span class="o">=</span><span class="p">{</span><span class="s2">"r"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">"t"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">"l"</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">"b"</span><span class="p">:</span><span class="mi">0</span><span class="p">}</span>  <span class="c1"># Remove margins for a cleaner view</span>
+<span class="p">)</span>
+
+
+
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 </div>
 </div>
 </div>
