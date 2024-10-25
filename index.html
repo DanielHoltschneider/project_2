@@ -7651,7 +7651,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Import the results and show a sample</span>
@@ -7668,7 +7668,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7723,57 +7723,6 @@ a.anchor-link {
 <td>***</td>
 </tr>
 <tr>
-<th>72255</th>
-<td>72421</td>
-<td>Text</td>
-<td>2023-12-15</td>
-<td>The room in the tower, and other stories</td>
-<td>en</td>
-<td>Horror tales, English; Short stories, English;...</td>
-<td>PR</td>
-<td>Browsing: Literature; Browsing: Fiction</td>
-<td>&lt;NA&gt;</td>
-<td>Benson</td>
-<td>E. F. (Edward Frederic)</td>
-<td>1867</td>
-<td>1940</td>
-<td>THE ROOM IN THE TOWER, AND OTHER STORIES ***\r...</td>
-</tr>
-<tr>
-<th>53107</th>
-<td>53181</td>
-<td>Text</td>
-<td>2016-10-01</td>
-<td>Eräitä kertoelmia</td>
-<td>fi</td>
-<td>Science fiction; Ghost stories; English fictio...</td>
-<td>PR</td>
-<td>Browsing: Literature; Browsing: Science-Fictio...</td>
-<td>&lt;NA&gt;</td>
-<td>Wells</td>
-<td>H. G. (Herbert George)</td>
-<td>1866</td>
-<td>1946</td>
-<td>ERÄITÄ KERTOELMIA ***\r\n\r\n\r\n\r\n\r\nProdu...</td>
-</tr>
-<tr>
-<th>173</th>
-<td>174</td>
-<td>Text</td>
-<td>1994-10-01</td>
-<td>The Picture of Dorian Gray</td>
-<td>en</td>
-<td>Didactic fiction; Supernatural -- Fiction; Con...</td>
-<td>PR</td>
-<td>Gothic Fiction; Movie Books; Browsing: Literat...</td>
-<td>&lt;NA&gt;</td>
-<td>Wilde</td>
-<td>Oscar</td>
-<td>1854</td>
-<td>1900</td>
-<td>THE PICTURE OF DORIAN GRAY ***\r\n\r\n\r\n\r\n...</td>
-</tr>
-<tr>
 <th>47444</th>
 <td>47518</td>
 <td>Text</td>
@@ -7789,6 +7738,57 @@ a.anchor-link {
 <td>1564</td>
 <td>1616</td>
 <td>SHAKESPEARE'S COMEDY OF THE TEMPEST ***\r\n\r\...</td>
+</tr>
+<tr>
+<th>49148</th>
+<td>49222</td>
+<td>Text</td>
+<td>2015-06-16</td>
+<td>John Silence, Physician Extraordinary</td>
+<td>en</td>
+<td>Horror tales, English; Detective and mystery s...</td>
+<td>PR</td>
+<td>Browsing: Crime/Mystery; Browsing: Literature;...</td>
+<td>&lt;NA&gt;</td>
+<td>Blackwood</td>
+<td>Algernon</td>
+<td>1869</td>
+<td>1951</td>
+<td>JOHN SILENCE, PHYSICIAN EXTRAORDINARY ***\r\n\...</td>
+</tr>
+<tr>
+<th>17822</th>
+<td>17893</td>
+<td>Text</td>
+<td>2006-03-01</td>
+<td>The Best Ghost Stories</td>
+<td>en</td>
+<td>Ghost stories</td>
+<td>PN</td>
+<td>Browsing: Literature; Browsing: Fiction</td>
+<td>Reeve, Arthur B. (Arthur Benjamin), 1880-1936 ...</td>
+<td>French</td>
+<td>Joseph Lewis</td>
+<td>1858</td>
+<td>1936</td>
+<td>THE BEST GHOST STORIES ***\r\n\r\n\r\nE-text p...</td>
+</tr>
+<tr>
+<th>72255</th>
+<td>72421</td>
+<td>Text</td>
+<td>2023-12-15</td>
+<td>The room in the tower, and other stories</td>
+<td>en</td>
+<td>Horror tales, English; Short stories, English;...</td>
+<td>PR</td>
+<td>Browsing: Literature; Browsing: Fiction</td>
+<td>&lt;NA&gt;</td>
+<td>Benson</td>
+<td>E. F. (Edward Frederic)</td>
+<td>1867</td>
+<td>1940</td>
+<td>THE ROOM IN THE TOWER, AND OTHER STORIES ***\r...</td>
 </tr>
 </tbody>
 </table>
@@ -7964,7 +7964,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Describe how the geoparsing process went. Look through the data and see if there are false positives that remain. Explain how you would remove them in the future. (1-2 paragraphs)</p>
+<p>The geoparsing process was difficult considering that the code did not want to work, and it would take a very long time to load. A way that we removed false positives was by limiting the emotion value. We did this by making every result be greater than 3. This would leave only strong emotions on the map. Any false positives would have been removed. This method is great at removing false emotions as it requires one line of code and not much work. Another way to filter out false positives is by manually checking the sentences.</p>
+<p>We can do this by looking at the places in the stories and reading small samples. You would have to count the results that produce places and not empty brackets/brackets with None. Reading over the results, it seemed that there were not a lot of false positives.  It would confuse some places such as a cottage, The Kingsway, Hall, Personage, etc. While these are places, you cannot exactly pinpoint where these locations are which leads to false positives.</p>
 </div>
 </div>
 </div>
@@ -8310,7 +8311,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Describe the sentiment analysis process. Look at the data and see if there are particular sentiment scores that stand out, either high scores or low scores. (1 paragraph)</p>
+<p>Data was collected from various works by other horror authors before Elliott O’Donnell. This raw data was cleaned and normalized to eliminate noise and irrelevant information. Using natural language processing techniques, each text was assigned a sentiment score on a scale from negative to positive. After scoring, the results were aggregated to identify trends, highlighting particularly high or low sentiment scores. For example, a high score indicates strong positive feelings, while a low score reflects strong negative feelings, helping readers grasp the intended emotions behind the text.</p>
+<p>In comparing sentiment scores, O'Donnell has a moderate sentiment profile, neither overwhelmingly positive nor negative. This contrasts with the high praise and divisive reactions often associated with earlier horror authors. This suggests that while O'Donnell is appreciated for his contributions to the genre, some criticism points to his writing as formulaic or lacking the psychological depth found in his predecessors, placing him in a more neutral sentiment than the more charged emotions often tied to other horror writers.</p>
 </div>
 </div>
 </div>
@@ -8319,7 +8321,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Import the results and show a sample</span>
@@ -8335,7 +8337,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8369,30 +8371,30 @@ a.anchor-link {
 </thead>
 <tbody>
 <tr>
-<th>141</th>
-<td>Lorraine</td>
-<td>5</td>
-<td>45.68338</td>
-<td>-73.78249</td>
+<th>42</th>
+<td>Canterbury</td>
+<td>6</td>
+<td>51.27904</td>
+<td>1.07992</td>
 <td>populated place</td>
-<td>0.211239</td>
-<td>0.504995</td>
-<td>0.283766</td>
-<td>-0.087465</td>
+<td>0.123772</td>
+<td>0.649069</td>
+<td>0.227159</td>
+<td>-0.100678</td>
 <td>1</td>
 </tr>
 <tr>
-<th>75</th>
-<td>Federal Republic of Germany</td>
-<td>20</td>
-<td>51.5</td>
-<td>10.5</td>
+<th>52</th>
+<td>Commonwealth of Australia</td>
+<td>5</td>
+<td>-25.0</td>
+<td>135.0</td>
 <td>independent political entity</td>
-<td>0.280724</td>
-<td>0.522553</td>
-<td>0.196722</td>
-<td>0.078028</td>
-<td>3</td>
+<td>0.224955</td>
+<td>0.357827</td>
+<td>0.417218</td>
+<td>-0.175920</td>
+<td>1</td>
 </tr>
 <tr>
 <th>65</th>
@@ -8408,30 +8410,30 @@ a.anchor-link {
 <td>1</td>
 </tr>
 <tr>
-<th>226</th>
-<td>Strasbourg</td>
-<td>6</td>
-<td>48.58392</td>
-<td>7.74553</td>
-<td>seat of a first-order administrative division</td>
-<td>0.086983</td>
-<td>0.628645</td>
-<td>0.284372</td>
-<td>-0.140238</td>
+<th>200</th>
+<td>Rhine</td>
+<td>7</td>
+<td>43.86277</td>
+<td>-87.95676</td>
+<td>populated place</td>
+<td>0.243399</td>
+<td>0.666315</td>
+<td>0.090286</td>
+<td>0.042809</td>
 <td>1</td>
 </tr>
 <tr>
-<th>161</th>
-<td>Milan</td>
-<td>14</td>
-<td>45.46427</td>
-<td>9.18951</td>
-<td>seat of a first-order administrative division</td>
-<td>0.083109</td>
-<td>0.659758</td>
-<td>0.257133</td>
-<td>-0.086572</td>
-<td>2</td>
+<th>78</th>
+<td>Frankenburg</td>
+<td>52</td>
+<td>48.06844</td>
+<td>13.49065</td>
+<td>seat of a third-order administrative division</td>
+<td>0.203698</td>
+<td>0.627655</td>
+<td>0.168646</td>
+<td>0.018599</td>
+<td>4</td>
 </tr>
 </tbody>
 </table>
@@ -8445,7 +8447,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_odonnell_SENTIMENTS</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_pickle</span><span class="p">(</span><span class="s1">'df_odonnell_SENTIMENTS.pickle'</span><span class="p">)</span>
@@ -8460,7 +8462,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8494,68 +8496,68 @@ a.anchor-link {
 </thead>
 <tbody>
 <tr>
-<th>275</th>
-<td>Republic of Angola</td>
+<th>123</th>
+<td>Fontainebleau</td>
 <td>1</td>
-<td>-12.5</td>
-<td>18.5</td>
-<td>independent political entity</td>
-<td>0.872092</td>
-<td>0.109523</td>
-<td>0.018385</td>
-<td>0.760207</td>
+<td>48.40908</td>
+<td>2.70177</td>
+<td>seat of a third-order administrative division</td>
+<td>0.046975</td>
+<td>0.854969</td>
+<td>0.098056</td>
+<td>-0.007408</td>
 <td>1</td>
 </tr>
 <tr>
-<th>195</th>
-<td>Loing</td>
+<th>227</th>
+<td>Naseby</td>
 <td>1</td>
-<td>9.022</td>
-<td>32.44437</td>
+<td>52.39422</td>
+<td>-0.98927</td>
 <td>populated place</td>
-<td>0.046091</td>
-<td>0.648622</td>
-<td>0.305287</td>
-<td>-0.091076</td>
+<td>0.052263</td>
+<td>0.913499</td>
+<td>0.034238</td>
+<td>0.001559</td>
 <td>1</td>
 </tr>
 <tr>
-<th>346</th>
-<td>United States Virgin Islands</td>
-<td>4</td>
-<td>18.34829</td>
-<td>-64.98348</td>
-<td>dependent political entity</td>
-<td>0.109776</td>
-<td>0.536721</td>
-<td>0.353503</td>
-<td>-0.244471</td>
+<th>362</th>
+<td>Winnipeg</td>
+<td>1</td>
+<td>49.8844</td>
+<td>-97.14704</td>
+<td>seat of a first-order administrative division</td>
+<td>0.122472</td>
+<td>0.742296</td>
+<td>0.135232</td>
+<td>-0.003288</td>
 <td>1</td>
 </tr>
 <tr>
-<th>50</th>
-<td>Cairo</td>
+<th>338</th>
+<td>Town</td>
 <td>2</td>
-<td>30.06263</td>
-<td>31.24967</td>
-<td>capital of a political entity</td>
-<td>0.092942</td>
-<td>0.660456</td>
-<td>0.246602</td>
-<td>-0.107256</td>
+<td>51.65911</td>
+<td>-0.07819</td>
+<td>section of populated place</td>
+<td>0.102899</td>
+<td>0.876706</td>
+<td>0.020395</td>
+<td>0.011545</td>
 <td>1</td>
 </tr>
 <tr>
-<th>158</th>
-<td>Japan</td>
-<td>4</td>
-<td>35.68536</td>
-<td>139.75309</td>
-<td>independent political entity</td>
-<td>0.222027</td>
-<td>0.630125</td>
-<td>0.147848</td>
-<td>0.038989</td>
+<th>112</th>
+<td>Empire</td>
+<td>1</td>
+<td>37.63826</td>
+<td>-120.90215</td>
+<td>populated place</td>
+<td>0.101380</td>
+<td>0.881064</td>
+<td>0.017555</td>
+<td>0.009970</td>
 <td>1</td>
 </tr>
 </tbody>
@@ -8583,15 +8585,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Describe how you "cleaned up" the map and why. For example, you can explain:</p>
-<ul>
-<li>If you decided to remove any results based on count</li>
-<li>Filtered out particular types of locations</li>
-<li>Modified the map colors</li>
-<li>Modified the map zoom and center
-Does your map try to tell a particular story? If so, what is that story?</li>
-</ul>
-<p>(1-2 paragraphs)</p>
+<p>We focused on making the map more informative and visually appealing. We   filtered the location count to greater than 3 to ensure more specific and relevant results.  This helped eliminate outliers and provide a clearer view of significant data points. We also changed the map colors to an "ice and fire" theme, which enhanced readability by using contrasting colors to differentiate between various data points.</p>
+<p>Additionally, we adjusted the map zoom and centered it to highlight areas of interest effectively. The story the map tells is one of diversity in writing styles. Odonnell stands out with a less neutral score compared to other artists, showcasing higher highs and lower lows. This suggests that Odonnell's writing is more emotionally intense and varied. Moreover, the scattered nature of Odonnell's data points implies a broader range of topics and themes explored in his work, setting him apart from his peers.</p>
 </div>
 </div>
 </div>
@@ -8646,12 +8641,12 @@ Does your map try to tell a particular story? If so, what is that story?</li>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
 <span class="c1">#YOUR MAP CODE HERE</span>
-<span class="n">df_odonnell_SENTIMENTS</span> <span class="o">=</span><span class="n">df_odonnell_SENTIMENTS</span><span class="p">[</span><span class="n">df_odonnell_SENTIMENTS</span><span class="o">.</span><span class="n">location_count</span><span class="o">&gt;</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">df_odonnell_SENTIMENTS</span> <span class="o">=</span> <span class="n">df_odonnell_SENTIMENTS</span><span class="p">[</span><span class="n">df_odonnell_SENTIMENTS</span><span class="o">.</span><span class="n">location_count</span><span class="o">&gt;</span><span class="mi">3</span><span class="p">]</span>
 <span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter_mapbox</span><span class="p">(</span>
     <span class="n">df_odonnell_SENTIMENTS</span><span class="p">,</span>  <span class="c1">#put your dataframe here</span>
     <span class="n">lat</span><span class="o">=</span><span class="s2">"latitude"</span><span class="p">,</span>               <span class="c1"># Latitude column</span>
@@ -8694,34 +8689,19 @@ Does your map try to tell a particular story? If so, what is that story?</li>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="7.-Reflection-(Individual)">7. Reflection (Individual)<a class="anchor-link" href="#7.-Reflection-(Individual)">¶</a></h3><p>Describe how the process of geoparsing and emotion tagging went.</p>
-<ul>
-<li><p>What expectations did you have when you went into the processing and what was the actual result?</p>
-</li>
-<li><p>Do you feel that the process was succesful?</p>
-</li>
-<li><p>What were some stumbling blocks you faced when collecting and processing your data?</p>
-</li>
-<li><p>What is some "garbage" data that is still in your data set?</p>
-</li>
-<li><p>If you had more time, how would you refine the results?</p>
-<p>(1-2 paragraphs)</p>
-</li>
-</ul>
+<h3 id="7.-Reflection-(Individual)">7. Reflection (Individual)<a class="anchor-link" href="#7.-Reflection-(Individual)">¶</a></h3>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=0d0b83f6-14f3-4e3f-b27f-cbf7531a87b0">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0d0b83f6-14f3-4e3f-b27f-cbf7531a87b0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>I expected this project to be harder than it turned out to be; most of it was very straightforward. The only headache came with not understanding the full scope of the code, so when coming to an error, it was a very big roadblock to fixing it. Causing me to have to wait till the next class for a solution. It does seem overall unavoidable because the undertaking of understanding the Python code would be an even more massive endeavor. Even with these hurdles, my group eventually came to a successful result. We accomplished our goal of visualizing the two corpora. While not perfect, it still allows us to make some introductory conlusions about our data. Making conclusions about soley the data presented shows us that both datasets have a more negative skew, which makes sense for them making scary stories. But it is hard to find a discernible difference from Elliot O'Donnell's work. A lot of garbage data persists in the O'Donnell corpus. I don't believe the 1800 English author wrote about Japan or the American Midwest.
+If I had total understanding of the software and more time to expound on our findings, I would first eliminate the garbage locations, then find ways to represent more data. General nouns like house or barn that a lot of horror artists will set their books are unrepresented in the geoparsed map. I would like to add a category for those general nouns because we are missing a large environment that these books take place in, and without it, they are unable to obtain a holistic conclusion pertaining to who is scarier, O'Donnell or those who came before him. Overall, with the current working dataset, I would declare the hypothosis as false due to there being no deserable differences between the datasets. With further dive into the sentimants and less focus on geoparsing, a different conclusion could be come to.</p>
 </div>
 </div>
 </div>
